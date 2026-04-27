@@ -4,7 +4,7 @@ def Run_Command(cmd):
    try:
          result=subprocess.run(cmd,shell=True,capture_output=True,text=True)
          if result.stdout:
-            print(result.stdout.strip())  # .strip() لإزالة السطور الفارغة في البداية أو النهاية
+            print(result.stdout.strip()  
          if result.stderr:
             print("Error:", result.stderr.strip())
    except subprocess.CalledProcessError as e:
