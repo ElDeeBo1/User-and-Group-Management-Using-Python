@@ -1,37 +1,46 @@
-# 🐧 Linux User Management Script (Python)
+#  Linux User Management Tool (Python)
 
-A simple **Python CLI tool** for managing Linux users and groups.  
-The script provides an **interactive menu** that allows system administrators to perform common user management tasks easily.
-
-This project uses Python's **subprocess module** to execute Linux system commands such as `useradd`, `usermod`, `groupadd`, and others.
+A simple command-line Python tool to automate Linux user and group management using system administration commands.
 
 ---
 
-## 📌 Features
+##  Features
 
-This script supports the following operations:
-
-### 👤 User Management
-- Add new user
-- Modify existing user
-- Delete user
-- Lock user account
-- Unlock user account
-- Change user password
+- Create new Linux users with passwords
+- Modify existing users (username, groups)
+- Delete users with home directory removal
 - List all system users
-
-### 👥 Group Management
-- Add new group
-- Delete group
-- Add user to supplementary group
-- Remove user from supplementary group
-- Change primary group
+- Create and delete groups
+- Lock and unlock user accounts
+- Change user passwords
+- Interactive menu-driven CLI
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - Python 3
-- Linux System Administration Commands
-- Python subprocess module
+- Linux Shell Commands
+- subprocess module
 
+---
+
+##  How It Works
+
+The project executes Linux system commands such as:
+- `useradd`
+- `usermod`
+- `userdel`
+- `groupadd`
+- `groupdel`
+- `passwd`
+- `chpasswd`
+
+All commands are executed securely using Python’s `subprocess` module.
+
+---
+
+##  How to Run
+
+```bash
+python3 main.py
